@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'ASKiwiTest_Example' do
+  pod 'ASKiwiTest', :path => '../'
+
+  target 'ASKiwiTest_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  pod 'FBSnapshotTestCase'
+  end
+end
