@@ -23,6 +23,10 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9C71C7431F9743AE006EBF9E /* ASRatingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C71C7421F9743AE006EBF9E /* ASRatingService.m */; };
+		9C71C7471F9783D5006EBF9E /* ASRatingServiceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C71C7461F9783D5006EBF9E /* ASRatingServiceTest.m */; };
+		9C889EDE1F960D7C006C414A /* ASRatingCalcularTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C889EDC1F960D67006C414A /* ASRatingCalcularTest.m */; };
+		9CE90AD91F90ABD1000A0C39 /* ASRatingCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE90AD81F90ABD1000A0C39 /* ASRatingCalculator.m */; };
 		A39DEDEB69DBC8B2ADEA8FE3 /* Pods_ASKiwiTest_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A1C74E14B79232F8AE98B5 /* Pods_ASKiwiTest_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,9 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2727B536B5402FC7AA369AEF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2727B536B5402FC7AA369AEF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3DD3FDEC8EC3ABFB0FA73114 /* Pods_ASKiwiTest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASKiwiTest_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		58F43F68F0E616B641106000 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		58F43F68F0E616B641106000 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ASKiwiTest_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASKiwiTest_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,7 +66,13 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E90B103C195E06D9CFFE918 /* Pods-ASKiwiTest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASKiwiTest_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASKiwiTest_Example/Pods-ASKiwiTest_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8E3FCDF0AB5EBB755358CDEB /* ASKiwiTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ASKiwiTest.podspec; path = ../ASKiwiTest.podspec; sourceTree = "<group>"; };
+		8E3FCDF0AB5EBB755358CDEB /* ASKiwiTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ASKiwiTest.podspec; path = ../ASKiwiTest.podspec; sourceTree = "<group>"; };
+		9C71C7411F9743AE006EBF9E /* ASRatingService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASRatingService.h; sourceTree = "<group>"; };
+		9C71C7421F9743AE006EBF9E /* ASRatingService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASRatingService.m; sourceTree = "<group>"; };
+		9C71C7461F9783D5006EBF9E /* ASRatingServiceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASRatingServiceTest.m; sourceTree = "<group>"; };
+		9C889EDC1F960D67006C414A /* ASRatingCalcularTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASRatingCalcularTest.m; sourceTree = "<group>"; };
+		9CE90AD71F90ABD1000A0C39 /* ASRatingCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASRatingCalculator.h; sourceTree = "<group>"; };
+		9CE90AD81F90ABD1000A0C39 /* ASRatingCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASRatingCalculator.m; sourceTree = "<group>"; };
 		DA72BDAF084793B04EBB41A9 /* Pods-ASKiwiTest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASKiwiTest_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASKiwiTest_Tests/Pods-ASKiwiTest_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DE86AA3EDF2A54885CE1711B /* Pods-ASKiwiTest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASKiwiTest_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASKiwiTest_Example/Pods-ASKiwiTest_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F6A1C74E14B79232F8AE98B5 /* Pods_ASKiwiTest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASKiwiTest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +147,10 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* ASViewController.h */,
 				6003F5A6195388D20070C39A /* ASViewController.m */,
+				9CE90AD71F90ABD1000A0C39 /* ASRatingCalculator.h */,
+				9CE90AD81F90ABD1000A0C39 /* ASRatingCalculator.m */,
+				9C71C7411F9743AE006EBF9E /* ASRatingService.h */,
+				9C71C7421F9743AE006EBF9E /* ASRatingService.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -160,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				6003F5BB195388D20070C39A /* Tests.m */,
+				9C889EDC1F960D67006C414A /* ASRatingCalcularTest.m */,
+				9C71C7461F9783D5006EBF9E /* ASRatingServiceTest.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -322,12 +338,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ASKiwiTest_Tests/Pods-ASKiwiTest_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/Kiwi/Kiwi.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kiwi.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,8 +422,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C71C7431F9743AE006EBF9E /* ASRatingService.m in Sources */,
 				6003F59E195388D20070C39A /* ASAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ASViewController.m in Sources */,
+				9CE90AD91F90ABD1000A0C39 /* ASRatingCalculator.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,7 +434,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C71C7471F9783D5006EBF9E /* ASRatingServiceTest.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				9C889EDE1F960D7C006C414A /* ASRatingCalcularTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

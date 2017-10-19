@@ -10,7 +10,20 @@
 
 SPEC_BEGIN(InitialTests)
 
-describe(@"My initial tests", ^{
+describe(@"My initial tests1", ^{
+  
+  context(@"will pass", ^{
+    
+    it(@"can do maths", ^{
+      [[@23 should] beGreaterThan:@1];
+    });
+    
+    it(@"can read", ^{
+      [[@"team" should] containString:@"t"];
+    });
+  });
+});
+describe(@"My initial tests2", ^{
 
   context(@"will fail", ^{
 
@@ -40,6 +53,8 @@ describe(@"My initial tests", ^{
   });
   
 });
+
+
 
 SPEC_END
 

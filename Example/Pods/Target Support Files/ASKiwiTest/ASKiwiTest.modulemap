@@ -1,0 +1,6 @@
+framework module ASKiwiTest {
+  umbrella header "ASKiwiTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

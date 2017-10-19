@@ -1,0 +1,6 @@
+framework module Pods_ASKiwiTest_Tests {
+  umbrella header "Pods-ASKiwiTest_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
