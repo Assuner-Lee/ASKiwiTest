@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) ASRatingCalculator *calculator;
 @property (nonatomic, assign) BOOL hasRemoveExtremum;
+@property (nonatomic, strong) NSRegularExpression *regularExpression;
 
 @end
 
@@ -22,6 +23,7 @@
 - (instancetype)init {
   if (self = [super init]) {
     self.calculator = [[ASRatingCalculator alloc] init];
+    _regularExpression = [NSRegularExpression regularExpressionWithPattern:@"^\\d+((.?\\d+)|d*)$" options:NSRegularExpressionCaseInsensitive error:nil];
   }
   return self;
 }
@@ -31,7 +33,8 @@
   if (scores.count) {
     NSMutableArray *mScores = [[NSMutableArray alloc] init];
     for (NSString *score in scores) {
-      if (![[@(score.doubleValue) stringValue] isEqualToString:score]) {
+      NSRange matchRange = [_regularExpression rangeOfFirstMatchInString:score options:NSMatchingReportCompletion range:NSMakeRange(0,score.length)];
+      if (!matchRange.length) {
         return NO;
       }
       [mScores addObject:@(score.doubleValue)];
@@ -44,7 +47,7 @@
 
 - (double)averageScore {
   [[NSUserDefaults standardUserDefaults] setDouble:self.calculator.average forKey:@"asrating_lastResult"];
-  return self.calculator.average;
+  return [self.calculator average];
 }
 
 - (double)averageScoreAfterRemoveMinAndMax {
@@ -52,7 +55,8 @@
     [self.calculator removeMaxAndMin];
     _hasRemoveExtremum = YES;
   }
-  return self.calculator.average;
+  [[NSUserDefaults standardUserDefaults] setDouble:self.calculator.average forKey:@"asrating_lastResult"];
+  return [self.calculator average];
 }
 
 - (double)lastResult {
