@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "ASRatingCalculator.h"
 
-SPEC_BEGIN(ASRatingServiceTest2)
+SPEC_BEGIN(ASRatingCalculatorTest)
 
-describe(@"ASRatingServiceTest", ^{
+describe(@"ASRatingCalculatorTest", ^{
   __block ASRatingCalculator *calculator;
   beforeEach(^{
     calculator = [[ASRatingCalculator alloc] init];
@@ -33,7 +33,7 @@ describe(@"ASRatingServiceTest", ^{
       [[calculator.scores should] haveCountOf:6];
     });
     
-    it(@"should hava scores", ^{
+    it(@"should have scores", ^{
       [calculator inputScores:@[@4, @3, @2, @1]];
       [[theValue(calculator.scores.count) should] equal:theValue(4)];
       
@@ -54,7 +54,7 @@ describe(@"ASRatingServiceTest", ^{
       [[theValue([calculator maxScore]) should] equal:@8.5];
       [[theValue([calculator average]) should] equal:theValue(4)];
     });
-    
+
     it(@"can remove max and min correctly", ^{
       [calculator removeMaxAndMin];
       [[theValue([calculator minScore]) should] equal:@2.0];

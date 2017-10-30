@@ -21,38 +21,40 @@ describe(@"My initial tests1", ^{
     it(@"can read", ^{
       [[@"team" should] containString:@"t"];
     });
+    
   });
 });
-describe(@"My initial tests2", ^{
 
-  context(@"will fail", ^{
-
-      it(@"can do maths", ^{
-          [[@1 should] equal:@2];
-      });
-
-      it(@"can read", ^{
-          [[@"number" should] equal:@"string"];
-      });
-    
-      it(@"will wait and fail", ^{
-          NSObject *object = [[NSObject alloc] init];
-          [[expectFutureValue(object) shouldEventually] receive:@selector(autoContentAccessingProxy)];
-      });
-  });
-
-  context(@"will pass", ^{
-    
-      it(@"can do maths", ^{
-        [[@1 should] beLessThan:@23];
-      });
-    
-      it(@"can read", ^{
-          [[@"team" shouldNot] containString:@"I"];
-      });  
-  });
-  
-});
+//describe(@"My initial tests2", ^{
+//
+//  context(@"will fail", ^{
+//
+//      it(@"can do maths", ^{
+//          [[@1 should] equal:@2];
+//      });
+//
+//      it(@"can read", ^{
+//          [[@"number" should] equal:@"string"];
+//      });
+//    
+//      it(@"will wait and fail", ^{
+//          NSObject *object = [[NSObject alloc] init];
+//          [[expectFutureValue(object) shouldEventually] receive:@selector(autoContentAccessingProxy)];
+//      });
+//  });
+//
+//  context(@"will pass", ^{
+//    
+//      it(@"can do maths", ^{
+//        [[@1 should] beLessThan:@23];
+//      });
+//    
+//      it(@"can read", ^{
+//          [[@"team" shouldNot] containString:@"I"];
+//      });  
+//  });
+//
+//});
 
 
 
