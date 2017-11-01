@@ -1,0 +1,15 @@
+check_result() {
+if [ $? != 0 ]; then
+echo "$1 failed!!"
+echo "push will not execute"
+echo "$?"
+exit 1
+else
+echo "$1 passed."
+echo "push will execute"
+echo "$?"
+fi
+}
+
+xcodebuild -workspace Example/ASKiwiTest.xcworkspace -scheme ASKiwiTest-Example -destination 'platform=iOS Simulator,OS=11.0,name=iPhone 7' test
+check_result "test"

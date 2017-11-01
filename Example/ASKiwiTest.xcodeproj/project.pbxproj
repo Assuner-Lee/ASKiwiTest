@@ -225,6 +225,7 @@
 				6003F588195388D20070C39A /* Resources */,
 				CC689BB17775FCDE80CE3E22 /* [CP] Embed Pods Frameworks */,
 				2E5AE919A7924D17433E9C0D /* [CP] Copy Pods Resources */,
+				9C3A4BBA1FA9C99C0056AA47 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -378,6 +379,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ASKiwiTest_Tests/Pods-ASKiwiTest_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		9C3A4BBA1FA9C99C0056AA47 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "chmod 777 ../add-pre-push-hook.sh\n../add-pre-push-hook.sh";
 		};
 		B1891709D7C4EB3645AC7242 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
