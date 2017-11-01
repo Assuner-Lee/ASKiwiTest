@@ -1,3 +1,8 @@
+workspace_name() {
+  workspace_file=`find . -maxdepth 2 -name *.xcworkspace -exec basename {} \;`
+  echo ${workspace_file%.xcworkspace}
+}
+
 check_result() {
 if [ $? != 0 ]; then
 echo "$1 failed!!"
@@ -11,5 +16,7 @@ echo "$?"
 fi
 }
 
-xcodebuild -workspace Example/ASKiwiTest.xcworkspace -scheme ASKiwiTest-Example -destination 'platform=iOS Simulator,OS=11.0,name=iPhone 7' test
+workspace=$(workspace_name)
+
+xcodebuild -workspace Example/$workspace.xcworkspace -scheme $workspace-Example -destination 'platform=iOS Simulator,OS=11.0,name=iPhone 7' test
 check_result "test"
