@@ -27,7 +27,7 @@ describe(@"ASRatingCalculatorTest", ^{
     });
   });
   
-  context(@"when input correctly ", ^{
+  context(@"when input correctly", ^{
     beforeEach(^{
       [calculator inputScores:@[@3, @2, @1, @4, @8.5, @5.5]];
       [[calculator.scores should] haveCountOf:6];
